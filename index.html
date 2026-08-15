@@ -133,6 +133,19 @@ h2{font-size:clamp(28px,4.4vw,44px);line-height:1.2;letter-spacing:-.035em;font-
 @media(max-width:900px){.uses{grid-template-columns:1fr 1fr}}
 @media(max-width:560px){.uses{grid-template-columns:1fr}}
 
+/* 실제 사례 */
+.case{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:34px 30px;margin-top:26px}
+.case .lead2{color:var(--sub);font-size:17px;margin-top:10px}
+.case .steps3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px;margin-top:26px}
+.case .cell h5{font-size:16.5px;font-weight:800;margin-bottom:4px;display:flex;align-items:center;gap:8px}
+.case .cell h5 i{width:22px;height:22px;border-radius:50%;background:var(--orange);color:#fff;font-style:normal;
+  font-size:12px;font-weight:800;display:grid;place-items:center;flex:none}
+.case .cell p{color:var(--sub);font-size:15px;margin-bottom:12px;line-height:1.6}
+.case video{width:100%;display:block;border-radius:12px;background:#111;border:1px solid var(--line)}
+.case video.v916{max-width:250px;margin:0 auto}
+.case .foot2{margin-top:22px;padding-top:20px;border-top:1px solid var(--line);color:var(--sub);font-size:15.5px}
+@media(max-width:900px){.case .steps3{grid-template-columns:1fr;gap:26px}.case video.v916{max-width:300px}}
+
 /* honest */
 .honest{background:#fff;border:1px solid var(--line);border-left:4px solid var(--orange);border-radius:12px;padding:28px 30px}
 .honest li{list-style:none;font-size:17px;margin-top:11px;color:var(--sub);padding-left:16px;position:relative}
@@ -428,6 +441,37 @@ html.js .rv.in{opacity:1;transform:none}
         <p>수정비가 들지 않습니다. 브랜드 색 3개를 넣으면 그 색으로 연출됩니다.</p>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<section id="case" style="padding-top:0">
+  <div class="wrap">
+    <div class="case rv">
+      <div class="num">실제 사례 · 슈퍼키친 (반찬가게)</div>
+      <h3 style="font-size:clamp(22px,3vw,30px);letter-spacing:-.03em;font-weight:800;margin-top:8px">
+        매장에서 트는 광고를, 사진 몇 장으로</h3>
+      <p class="lead2">글자를 크로마키로 뽑아 가게 사진 위에 얹었습니다. 촬영도, 편집 프로그램도 쓰지 않았습니다.</p>
+
+      <div class="steps3">
+        <div class="cell">
+          <h5><i>1</i>크로마키로 뽑기</h5>
+          <p>배경을 초록으로 두고 글자만 뽑습니다. 이 상태로 저장됩니다.</p>
+          <video src="https://raw.githubusercontent.com/jhleelj-cmd/typo-studio-assets/master/sk_chroma.mp4" autoplay muted loop playsinline preload="none"></video>
+        </div>
+        <div class="cell">
+          <h5><i>2</i>내 사진 위에 얹기</h5>
+          <p>초록만 지우면 글자가 남습니다. 반찬 사진 위에 그대로 올라갑니다.</p>
+          <video src="https://raw.githubusercontent.com/jhleelj-cmd/typo-studio-assets/master/sk_composite.mp4" controls muted loop playsinline preload="none"></video>
+        </div>
+        <div class="cell">
+          <h5><i>3</i>세로도 같은 방식</h5>
+          <p>비율만 9:16으로 바꿔 다시 뽑으면 됩니다. 매장 세로 모니터·릴스용.</p>
+          <video class="v916" src="https://raw.githubusercontent.com/jhleelj-cmd/typo-studio-assets/master/sk_vertical.mp4" controls muted loop playsinline preload="none"></video>
+        </div>
+      </div>
+
+      <div class="foot2">가격이 바뀌거나 메뉴가 늘면 <b>글자만 고쳐서 다시 뽑으면 됩니다.</b> 수정비가 들지 않습니다.</div>
     </div>
   </div>
 </section>
