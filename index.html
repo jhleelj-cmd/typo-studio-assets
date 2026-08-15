@@ -280,6 +280,25 @@ html.js .rv.in{opacity:1;transform:none}
   section{padding:60px 0}
 }
 @media(max-width:520px){ .grid{grid-template-columns:1fr} }
+/* 폰 (2026-08-16) — 900px 구간만 있고 그 아래가 없어서 첫 화면이 헐거웠다.
+   히어로 영상이 접힘선 밖으로 밀리면 "무슨 프로그램인지"를 못 보고 나간다. */
+@media(max-width:560px){
+  .hero{padding:52px 0 40px}
+  .stage{margin-top:30px}
+  h1{letter-spacing:-.04em}
+  .hero .lead{margin-top:16px;font-size:16.5px;line-height:1.65}
+  .cta-row{margin-top:24px;gap:10px}
+  .cta-row .btn.lg{flex:1 1 100%;justify-content:center;padding:15px 20px}
+  .microcopy{font-size:14.5px}
+  section{padding:48px 0}
+  .sec-head{margin-bottom:30px}
+  .sec-head p{font-size:17px}
+  .feat p,.step p{font-size:16.5px}
+  .stats{grid-template-columns:repeat(2,1fr);gap:16px;padding:26px 18px}
+  .marq{margin:40px 0}
+  /* 세로 영상이 폰에서 화면을 통째로 먹지 않게 */
+  .case video.v916,.case2 video.v916{max-width:230px;margin:0 auto}
+}
 @media(prefers-reduced-motion:reduce){ .marq-track{animation:none} .rv{opacity:1;transform:none} }
 </style>
 </head>
@@ -316,7 +335,7 @@ html.js .rv.in{opacity:1;transform:none}
     </div>
     <p class="microcopy">설치 없음 · 가입 없음 · 월 요금 없음 · 평생 사용 · 상업적 사용 가능</p>
 
-    <div class="shstage">
+    <div class="stage">
       <video id="demoVid" src="demo.mp4" poster="demo-poster.jpg"
              autoplay muted loop playsinline controls preload="metadata"></video>
     </div>
