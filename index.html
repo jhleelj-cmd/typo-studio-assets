@@ -209,6 +209,17 @@ h2{font-size:clamp(28px,4.4vw,44px);line-height:1.2;letter-spacing:-.035em;font-
 .case .cell p{color:var(--sub);font-size:15px;margin-bottom:12px;line-height:1.6}
 .case video{width:100%;display:block;border-radius:12px;background:#111;border:1px solid var(--line)}
 .case video.v916{width:auto;height:300px;margin:0 auto}
+.case2{display:grid;grid-template-columns:1fr 300px;gap:26px;margin-top:26px;align-items:start}
+.case2 video{width:100%;display:block;border-radius:12px;background:#111;border:1px solid var(--line)}
+.diff{margin-top:26px;border-top:1px solid var(--line)}
+.diff .row{display:grid;grid-template-columns:150px 1fr 1fr;gap:18px;padding:13px 2px;
+  border-bottom:1px solid var(--line);font-size:16px;align-items:baseline}
+.diff .row.h{font-weight:800;color:var(--ink);font-size:14.5px;letter-spacing:.02em}
+.diff .row b{font-weight:800;color:var(--sub);font-size:15px}
+.diff .row span{color:var(--sub)}
+.diff .row span.on{color:var(--ink);font-weight:700}
+@media(max-width:900px){.case2{grid-template-columns:1fr}
+  .diff .row{grid-template-columns:1fr;gap:4px;padding:14px 2px}}
 .case .foot2{margin-top:22px;padding-top:20px;border-top:1px solid var(--line);color:var(--sub);font-size:15.5px}
 @media(max-width:900px){.case .steps3{grid-template-columns:1fr;gap:26px}.case video.v916{height:auto;width:100%;max-width:300px}}
 
@@ -540,7 +551,7 @@ html.js .rv.in{opacity:1;transform:none}
 <section id="case" class="w">
   <div class="wrap">
     <div class="case rv">
-      <div class="num">실제 사례 · 슈퍼키친 (반찬가게)</div>
+      <div class="num">실제 사례 ①  ·  슈퍼키친 (반찬가게)</div>
       <h3 style="font-size:clamp(22px,3vw,30px);letter-spacing:-.03em;font-weight:800;margin-top:8px">
         매장에서 트는 광고를, 사진 몇 장으로</h3>
       <p class="lead2">글자를 크로마키로 뽑아 가게 사진 위에 얹었습니다. 촬영도, 편집 프로그램도 쓰지 않았습니다.</p>
@@ -564,6 +575,31 @@ html.js .rv.in{opacity:1;transform:none}
       </div>
 
       <div class="foot2">가격이 바뀌거나 메뉴가 늘면 <b>글자만 고쳐서 다시 뽑으면 됩니다.</b> 수정비가 들지 않습니다.</div>
+    </div>
+
+    <div class="case rv" style="margin-top:34px">
+      <div class="num">실제 사례 ②  ·  커피 브랜드 (예시용 가상 브랜드)</div>
+      <h3 style="font-size:clamp(22px,3vw,30px);letter-spacing:-.03em;font-weight:800;margin-top:8px">
+        같은 프로그램인데, 전혀 다른 얼굴이 나옵니다</h3>
+      <p class="lead2">위 반찬가게 광고와 <b>같은 프로그램·같은 크로마키 방식</b>으로 만들었습니다.
+        설정만 바꿨는데 톤이 이렇게 갈립니다.</p>
+
+      <div class="case2">
+        <video src="https://raw.githubusercontent.com/jhleelj-cmd/typo-studio-assets/master/cf_composite.mp4" controls muted loop playsinline preload="none"></video>
+        <video class="v916" src="https://raw.githubusercontent.com/jhleelj-cmd/typo-studio-assets/master/cf_vertical.mp4" controls muted loop playsinline preload="none"></video>
+      </div>
+
+      <div class="diff">
+        <div class="row h"><b>바꾼 것</b><span>반찬가게</span><span>커피 브랜드</span></div>
+        <div class="row"><b>모드</b><span>브랜드 · 광고</span><span class="on">뮤직비디오</span></div>
+        <div class="row"><b>글자 호흡</b><span>1.4초 · 빠르게</span><span class="on">2.0초 · 느리게</span></div>
+        <div class="row"><b>화면 구성</b><span>사진 2장 분할</span><span class="on">사진 1장 전면</span></div>
+        <div class="row"><b>연출</b><span>자동 배정</span><span class="on">자간 모으기 고정</span></div>
+        <div class="row"><b>배경 음악</b><span>빠른 곡</span><span class="on">잔잔한 곡</span></div>
+      </div>
+
+      <div class="foot2">업종이 바뀌면 <b>사진과 문구, 설정 다섯 개</b>만 바꿉니다.
+        새로 배울 것도, 새 프로그램을 살 일도 없습니다.</div>
     </div>
   </div>
 </section>
