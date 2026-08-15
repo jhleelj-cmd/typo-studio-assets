@@ -133,6 +133,26 @@ h2{font-size:clamp(28px,4.4vw,44px);line-height:1.2;letter-spacing:-.035em;font-
 @media(max-width:900px){.uses{grid-template-columns:1fr 1fr}}
 @media(max-width:560px){.uses{grid-template-columns:1fr}}
 
+/* 받는 것 · 설명서 */
+.pack{margin-top:34px}
+.pages{display:grid;grid-template-columns:1fr 1fr 1fr;gap:22px}
+.pages figure{margin:0}
+.pages img{width:100%;display:block;border:1px solid var(--line);border-radius:10px;background:#fff;
+  box-shadow:0 14px 34px rgba(23,23,28,.10)}
+.pages figcaption{margin-top:12px;font-size:15.5px;font-weight:700;color:var(--sub);text-align:center}
+.toc{margin-top:44px;display:grid;grid-template-columns:1fr 1fr;gap:0 44px}
+.toc div{display:flex;gap:14px;align-items:baseline;padding:13px 2px;border-bottom:1px solid var(--line);
+  font-size:17px;font-weight:700}
+.toc div em{font-style:normal;font-weight:800;color:var(--orange);font-size:14px;min-width:24px}
+.toc div s{text-decoration:none;margin-left:auto;font-size:14.5px;font-weight:600;color:var(--sub)}
+.toc div.hi{background:#FFF4EE;border-bottom-color:#FFD9C7;margin:0 -10px;padding-left:14px;padding-right:14px}
+.packbox{margin-top:40px;background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:30px 28px;
+  display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.packbox div h5{font-size:19px;font-weight:800;letter-spacing:-.02em}
+.packbox div p{margin-top:9px;font-size:16.5px;color:var(--sub);line-height:1.72}
+@media(max-width:900px){.pages{grid-template-columns:1fr;gap:26px}.toc{grid-template-columns:1fr}
+  .packbox{grid-template-columns:1fr}}
+
 /* 실제 사례 */
 .case{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:34px 30px;margin-top:26px}
 .case .lead2{color:var(--sub);font-size:17px;margin-top:10px}
@@ -476,11 +496,60 @@ html.js .rv.in{opacity:1;transform:none}
   </div>
 </section>
 
+<!-- 받는 것 -->
+<section id="pack">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="num">05 · 받는 것</div>
+      <h2>설명서를 그냥 펼쳐 보여드립니다.</h2>
+      <p>"쉽습니다"라고 백 번 쓰는 것보다 실제 지면 한 장이 빠릅니다. 아래는 동봉되는 사용설명서에서 그대로 가져온 화면입니다.</p>
+    </div>
+
+    <div class="pack rv">
+      <div class="pages">
+        <figure><img src="https://raw.githubusercontent.com/jhleelj-cmd/typo-studio-assets/master/manual_p00.jpg" alt="사용설명서 목차 지면" loading="lazy"><figcaption>목차 — 13장 전체</figcaption></figure>
+        <figure><img src="https://raw.githubusercontent.com/jhleelj-cmd/typo-studio-assets/master/manual_p01.jpg" alt="화면 구성 설명 지면" loading="lazy"><figcaption>화면 구성 — 어디에 뭐가 있는지</figcaption></figure>
+        <figure><img src="https://raw.githubusercontent.com/jhleelj-cmd/typo-studio-assets/master/manual_p29.jpg" alt="컬러 테마 설명 지면" loading="lazy"><figcaption>컬러 테마 — 17종·배경 12종</figcaption></figure>
+      </div>
+
+      <div class="toc">
+        <div><em>01</em>시작하기</div>
+        <div><em>08</em>내 영상 위에 글자만 올리기 — 크로마키</div>
+        <div class="hi"><em>02</em>1분 만에 첫 영상 만들기<s>여기까지만 읽어도 됩니다</s></div>
+        <div><em>09</em>프리셋 저장·불러오기</div>
+        <div><em>03</em>가사 넣는 네 가지 방법</div>
+        <div><em>10</em>영상으로 저장하기</div>
+        <div class="hi"><em>04</em>싱크 맞추기 — 가장 중요한 부분<s>4개 절</s></div>
+        <div class="hi"><em>11</em>납품 체크리스트<s>외주 하실 분</s></div>
+        <div><em>05</em>화면 전체 안내</div>
+        <div><em>12</em>문제 해결</div>
+        <div><em>06</em>쇼츠·릴스 만들기</div>
+        <div><em>13</em>자주 묻는 질문</div>
+        <div><em>07</em>음악 없이 텍스트만으로 만들기</div>
+        <div></div>
+      </div>
+
+      <div class="packbox">
+        <div>
+          <h5>파일은 두 개입니다</h5>
+          <p><b>index.html</b> 하나가 프로그램 전부이고, 나머지 하나가 <b>사용설명서 PDF 48쪽</b>입니다.
+             설치도, 가입도, 월 요금도 없습니다.</p>
+        </div>
+        <div>
+          <h5>글로만 쓴 설명서가 아닙니다</h5>
+          <p>프로그램 화면을 잘라 넣은 <b>캡처 19장</b>이 함께 들어 있습니다.
+             읽으면서 같은 화면을 눌러보실 수 있습니다.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- 정직 -->
 <section style="background:#fff;border-top:1px solid var(--line)">
   <div class="wrap">
     <div class="sec-head rv">
-      <div class="num">05 · 먼저 말씀드립니다</div>
+      <div class="num">06 · 먼저 말씀드립니다</div>
       <h2>안 되는 것도 적습니다.</h2>
       <p>파는 사람이 약점을 먼저 적습니다. 나머지 말도 그만큼 믿으셔도 됩니다.</p>
     </div>
@@ -518,7 +587,7 @@ html.js .rv.in{opacity:1;transform:none}
 <section id="faq" style="padding-top:0">
   <div class="wrap">
     <div class="sec-head rv">
-      <div class="num">06 · 자주 묻는 질문</div>
+      <div class="num">07 · 자주 묻는 질문</div>
       <h2>궁금하실 것들.</h2>
     </div>
     <div class="rv">
